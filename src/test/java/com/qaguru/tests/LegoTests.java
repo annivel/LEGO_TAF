@@ -1,10 +1,7 @@
 package com.qaguru.tests;
 
 import com.qaguru.model.PriceRangeLabel;
-import com.qaguru.pages.BasketPage;
-import com.qaguru.pages.OverlapForm;
-import com.qaguru.pages.SearchResultPage;
-import com.qaguru.pages.WebsitePage;
+import com.qaguru.pages.*;
 import org.junit.jupiter.api.Test;
 
 public class LegoTests {
@@ -19,8 +16,8 @@ public class LegoTests {
         overlap.closeOverlap();
         overlap.closeCookiesAlert();
 
-     /*   AuthorizationPage authorizationPage = new AuthorizationPage();
-        authorizationPage.authorizationForm();*/
+        AuthorizationPage authorizationPage = new AuthorizationPage();
+        authorizationPage.authorizationForm();
 
         SearchResultPage searchResultPage = new SearchResultPage();
         searchResultPage.categorySelect();
