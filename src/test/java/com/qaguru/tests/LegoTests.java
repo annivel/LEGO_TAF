@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class LegoTests {
 
+    @Tag("authorization_test")
     @Test
     void legoUITest() {
 
