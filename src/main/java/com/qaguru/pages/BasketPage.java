@@ -11,9 +11,22 @@ public class BasketPage {
 
     private TestingProperties cfg = ConfigFactory.create(TestingProperties.class);
 
-    public void verifyProductPrice() {
+    public void openBasket() {
         $("a[data-test='util-bar-cart']").click();
-        $x(String.format("//span[starts-with(text(),'%s')]", cfg.product())).shouldHave(Condition.text(cfg.product()));
+    }
+
+    public void verifyProductQuantity() {
+        openBasket();
+        int count = Integer.parseInt($("input[data-test='quantity-value']").val());
+        if (count == 3) {
+            $("button[data-test='remove-from-cart']").click();
+        }
+    }
+
+    public void verifyProductName() {
+        $x(String.format("//span[starts-with(text(),'%s')]", cfg.product()))
+                .shouldHave(Condition.text(cfg.product()));
     }
 
 }
+

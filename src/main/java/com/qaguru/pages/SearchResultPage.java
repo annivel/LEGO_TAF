@@ -21,7 +21,9 @@ public class SearchResultPage {
     }
 
     public void addToBag() {
-        $("button[kind='product']").click();
+        if (($("button[kind='disabled']")).isDisplayed()) {
+            System.out.println($("span[data-test='product-flag']").getText());
+        } else $("button[kind='product']").click();
     }
 
 }
