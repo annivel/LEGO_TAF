@@ -1,5 +1,6 @@
 package com.qaguru.pages;
 
+import com.codeborne.selenide.WebDriverRunner;
 import helpers.TestingProperties;
 import org.aeonbits.owner.ConfigFactory;
 
@@ -11,6 +12,7 @@ public class WebsitePage {
 
     public void openURL() {
         open(cfg.website());
+        WebDriverRunner.getWebDriver().manage().window().maximize();
     }
 
 }

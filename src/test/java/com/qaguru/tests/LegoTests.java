@@ -4,8 +4,7 @@ package com.qaguru.tests;
 import com.codeborne.selenide.Configuration;
 import com.qaguru.model.PriceRangeLabel;
 import com.qaguru.pages.*;
-import helpers.TestingProperties;
-import org.aeonbits.owner.ConfigFactory;
+import helpers.CustomWebDriver;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -13,11 +12,11 @@ import static io.qameta.allure.Allure.step;
 
 
 public class LegoTests {
-    private TestingProperties cfg = ConfigFactory.create(TestingProperties.class);
+
 
     @BeforeAll
-    public void setUp() {
-        Configuration.remote = cfg.remoteUrl();
+    public static void setUp() {
+        Configuration.browser = CustomWebDriver.class.getName();
         Configuration.driverManagerEnabled = false;
 
         //Configuration.headless = true;
