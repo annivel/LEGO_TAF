@@ -22,7 +22,7 @@ allure {
 
     task lego_test(type: Test) {
         useJUnitPlatform() {
-            includeTags "authorization_test"
+           //# includeTags "authorization_test"
         }
     }
 }

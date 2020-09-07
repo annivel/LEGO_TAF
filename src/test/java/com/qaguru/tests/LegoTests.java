@@ -1,16 +1,15 @@
 package com.qaguru.tests;
 
 
-import com.codeborne.selenide.Configuration;
 import com.qaguru.model.PriceRangeLabel;
 import com.qaguru.pages.*;
-import io.qameta.allure.junit4.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
-@Tag("authorization_test")
+
 public class LegoTests {
+
     @Test
     void legoUITest() {
         WebsitePage website = new WebsitePage();
@@ -19,7 +18,7 @@ public class LegoTests {
         SearchResultPage searchResultPage = new SearchResultPage();
         BasketPage basketPage = new BasketPage();
 
-        Configuration.headless = true;
+        //Configuration.headless = true;
 
         step("open the main page of the website");
         website.openURL();
