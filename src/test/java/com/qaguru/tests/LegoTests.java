@@ -1,14 +1,27 @@
 package com.qaguru.tests;
 
 
+import com.codeborne.selenide.Configuration;
 import com.qaguru.model.PriceRangeLabel;
 import com.qaguru.pages.*;
+import helpers.TestingProperties;
+import org.aeonbits.owner.ConfigFactory;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
 
 public class LegoTests {
+    private TestingProperties cfg = ConfigFactory.create(TestingProperties.class);
+
+    @BeforeAll
+    public void setUp() {
+        Configuration.remote = cfg.remoteUrl();
+        Configuration.driverManagerEnabled = false;
+
+        //Configuration.headless = true;
+    }
 
     @Test
     void legoUITest() {
@@ -17,8 +30,6 @@ public class LegoTests {
         AuthorizationPage authorizationPage = new AuthorizationPage();
         SearchResultPage searchResultPage = new SearchResultPage();
         BasketPage basketPage = new BasketPage();
-
-        //Configuration.headless = true;
 
         step("open the main page of the website");
         website.openURL();

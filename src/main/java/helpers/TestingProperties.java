@@ -11,4 +11,7 @@ public interface TestingProperties extends Config {
     String website();
 
     String product();
+
+    @Key("remote.url")
+    String remoteUrl();
 }
