@@ -20,10 +20,9 @@ public class CustomWebDriver implements WebDriverProvider {
     public WebDriver createDriver(DesiredCapabilities capabilities) {
         capabilities.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
         capabilities.setCapability("screenResolution", "1920x1080");
-
-
         capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.WIN10);
         capabilities.setCapability(CapabilityType.BROWSER_VERSION, "latest");
+
         try {
             return new RemoteWebDriver(new URL(cfg.remoteUrl()), capabilities);
         } catch (final MalformedURLException e) {
