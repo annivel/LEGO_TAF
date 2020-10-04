@@ -24,7 +24,7 @@ allure {
 }
 
 dependencies {
-    compile("com.codeborne:selenide:5.13.1")
+    compile("com.codeborne:selenide:5.15.0")
     compile("io.qameta.allure:allure-selenide:${allureVersion}")
     compile("org.junit.jupiter:junit-jupiter-api:5.6.2")
     compile("org.junit.jupiter:junit-jupiter-engine:5.6.2")
