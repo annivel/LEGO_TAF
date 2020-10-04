@@ -14,10 +14,11 @@ Lego TAF project is implemented such as technologies and libraries as:
   
 In the project I've worked with:
 
- - Webdriver(selenuim/selenide/selenoid)
- - Remote webdriver
+ - Webdriver(selenuim)
+ - Remote webdriver(selenoid)
  - XPath and CSS locators
  - Owner properties
+ - Jenkins & Selenoid/SauceLabs spin up in docker
 
 
 ###  Design Patterns 
