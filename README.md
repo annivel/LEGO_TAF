@@ -7,19 +7,23 @@ Lego TAF project is implemented such as technologies and libraries as:
   - Java
   - Gradle
   - JUnit5
-  - Allure Report
+  - Allure Report(logs,screenshot,video)
   - Selenide
   - Jenkins
   - Selenoid
+  
+In the project I've worked with:
+
+ - Webdriver(selenuim/selenide/selenoid)
+ - Remote webdriver
+ - XPath and CSS locators
+ - Owner properties
+
+
 ###  Design Patterns 
  
 Project created on the base of the two methodologies as Page Object and Page Factory.
 
 ### Testing 
 The main goal of Lego project was functional and GUI testing which verifies valid work of the tested registration form, website's elements, buttoms and referensies.
-In the project I've worked with:
 
- - Webdriver(selenuim/selenide/selenoid)
-- XPath and CSS locators
-- Allure Report (logs,screenshot,video)
-- Owner properties
