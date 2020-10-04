@@ -17,3 +17,9 @@ Project created on the base of the two methodologies as Page Object and Page Fac
 
 ### Testing 
 The main goal of Lego project was functional and GUI testing which verifies valid work of the tested registration form, website's elements, buttoms and referensies.
+In the project I've worked with:
+
+ - Webdriver(selenuim/selenide/selenoid)
+- XPath and CSS locators
+- Allure Report (logs,screenshot,video)
+- Owner properties
