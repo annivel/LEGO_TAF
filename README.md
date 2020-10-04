@@ -11,7 +11,7 @@ Lego TAF project is implemented such as technologies and libraries as:
   - Selenide
   - Jenkins
   - Selenoid
-###  Design Patterns POM
+###  Design Patterns 
  
 Project created on two main methodologies as Page Object and Page Factory.
 
