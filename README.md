@@ -18,7 +18,7 @@ In the project I've worked with:
  - Remote webdriver(selenoid)
  - XPath and CSS locators
  - Owner properties
- - Jenkins & Selenoid/SauceLabs spin up in docker
+ - Jenkins & Selenoid/SauceLabs in docker
 
 
 ###  Design Patterns 
