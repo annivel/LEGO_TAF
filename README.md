@@ -13,7 +13,7 @@ Lego TAF project is implemented such as technologies and libraries as:
   - Selenoid
 ###  Design Patterns 
  
-Project created on two main methodologies as Page Object and Page Factory.
+Project created on the base of the two methodologies as Page Object and Page Factory.
 
 ### Testing 
 The main goal of Lego project was functional and GUI testing which verifies valid work of the tested registration form, website's elements, buttoms and referensies.
