@@ -7,7 +7,7 @@ Lego TAF project is implemented such as technologies and libraries as:
   - Java
   - Gradle
   - JUnit5
-  - Allure Reports(logs, screenshot, video)
+  - Allure Reports (logs, screenshot, video)
   - Selenide
   - Jenkins
   - Selenoid
