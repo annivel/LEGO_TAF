@@ -29,6 +29,4 @@ public class LegoTests extends TestBase {
         basketPage.verifyProductQuantity();
         basketPage.verifyProductName();
     }
-
 }
-
